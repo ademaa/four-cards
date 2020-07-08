@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Four card feature section</title>
+  <!-- bootstap cdn -->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- font awesome cdn -->
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+
+  <!-- google fonts cdn -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+  body{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 0%, 98%);
+  }
+  .container-fluid{
+    padding: 7%;
+  }
+  .text{
+    text-align: center;
+    line-height: 1.5;
+    padding: 3% 5%;
+  }
+  .first-heading{
+    font-weight: 200;
+    color: hsl(229, 6%, 66%);
+  }
+  .second-heading{
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+  }
+  .text-heading{
+    font-weight: 400;
+    color: hsl(229, 6%, 66%);
+    padding: 2% 5%;
+  }
+  .box{
+    text-align: left;
+    background-color: #fff;
+    padding: 5%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px hsl(229, 6%, 66%);
+  }
+  .cyan{
+    border-top: hsl(180, 62%, 55%) 5px solid;
+    position: relative;
+    top: 10%;
+  }
+  .red{
+    border-top: hsl(0, 78%, 62%) 5px solid;
+    position: relative;
+    bottom: 20%;
+  }
+  .orange{
+    border-top: hsl(34, 97%, 64%) 5px solid;
+  }
+  .blue{
+    border-top: hsl(212, 86%, 64%) 5px solid;
+    position: relative;
+    top: 10%;
+  }
+  .card-heading{
+    padding: 1% 5%;
+    color: hsl(234, 12%, 34%);
+  }
+  .car-img{
+    position: relative;
+    left: 70%;
+  }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+    @media (max-width:990px){
+      .cayn, .red,.orange ,.blue{
+        position: static;
+      }
+      .box{
+        margin: 6% auto;
+      }
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section class="container-fluid">
+    <div class="row">
+      <div class="text col-lg-12">
+        <h1 class="first-heading">Reliable, efficient delivery</h1>
+        <h1 class="second-heading">Powered by Technology</h1>
+        <p class="text-heading">Our Artificial Intelligence powered tools use millions of project data points
+          to ensure that your project is successful</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-sm-12">
+        <div class="box cyan">
+          <h3 class="card-heading">Supervisor</h3>
+          <p class="text-heading">Monitors activity to identify project roadblocks</p>
+          <img class="car-img" src="images/icon-supervisor.svg" alt="supervisor">
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-12">
+      <div class="row">
+      <div class="col-lg-12">
+        <div class="box red">
+          <h3 class="card-heading">Team Builder</h3>
+          <p class="text-heading">Scans our talent network to create the optimal team for your project</p>
+          <img class="car-img" src="images/icon-team-builder.svg" alt="team-bulider">
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="box orange">
+        <h3 class="card-heading">Karma</h3>
+        <p class="text-heading">Regularly evaluates our talent to ensure quality</p>
+        <img class="car-img" src="images/icon-karma.svg" alt="karma">
+        </div>
+      </div>
+      </div>
+      </div>
+      <div class="col-lg-4 col-sm-12">
+        <div class="box blue">
+        <h3 class="card-heading">Calculator</h3>
+        <p class="text-heading">Uses data from past projects to provide better delivery estimates</p>
+        <img class="car-img" src="images/icon-calculator.svg" alt="calculator">
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">omar adam</a>.
+    </p>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
